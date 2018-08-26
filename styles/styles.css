@@ -1,7 +1,13 @@
 .publication {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 2rem;
 }
 
-.publication p {
-    margin: 1rem 0;
+.publication details {
+    margin: 2rem 0;
+}
+
+footer {
+    padding-bottom: 2rem;
 }

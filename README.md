@@ -10,7 +10,7 @@ pip install toml jinja2
 
 ## 2. Edit `publications.toml`
 
-The `publications.toml` file is a TOML file with sections of the form
+The `publications.toml` file is a [TOML](https://github.com/toml-lang/toml) file with sections of the form
 
 ```
 [[publications]]
@@ -40,7 +40,11 @@ The generator is not smart enough to follow paths and copy files from there, so 
 
 If everything works, no output will be produced. Open `output/index.html` to review your changes.
 
-## 5. rsync `output/` to `magao-x.org`
+## 5. Commit and push your changes
+
+Use `git add`, `git commit`, and `git push` to push your edits back up to GitHub.
+
+## 6. rsync `output/` to `magao-x.org`
 
 The publications site lives at https://magao-x.org/publications, which is served from `/srv/www/publications`.
 
