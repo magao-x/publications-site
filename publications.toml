@@ -1,0 +1,355 @@
+# Publication info in TOML (https://github.com/toml-lang/toml)
+#
+# Example:
+#
+# [[publications]]
+# title = ""
+# authors = [
+#     ""
+# ]
+# published_in = ""
+# publication_date = 1970-01-01T00:00:00
+# url = ""
+# poster_file = ""
+# manuscript_file = ""
+# slides_file = ""
+# abstract = '''
+# '''
+
+[[publications]]
+title = "MagAO-X: project status and first laboratory results"
+authors = [
+    "Jared Males", "Laird Close", "Kelsey Miller", "Lauren Schatz",
+    "David Doelman", "Jennifer Lumbres", "Frans Snik", "Alex Rodack",
+    "Justin Knight", "Kyle Van Gorkom", "Joseph Long", "Alex Hedglen",
+    "Maggie Kautz", "Nemanja Jovanovic", "Katie Morzinski", "Olivier Guyon",
+    "Ewan Douglas", "Katherine Follette", "Julien Lozi", "Chris Bohlman",
+    "Olivier Durney", "Victor Gasho", "Phil Hinz", "Michael Ireland",
+    "Madison Jean", "Christoph Keller", "Matt Kenworthy", "Ben Mazin",
+    "Jamison Noenickx", "Dan Alfred", "Kevin Perez", "Anna Sanchez",
+    "Corwynn Sauve", "Alycia Weinberger", "Al Conrad"
+]
+published_in = "Proc. SPIE. 10703, Adaptive Optics Systems VI"
+url = "https://doi.org/10.1117/12.2312992"
+publication_date = 2018-07-12T00:00:00
+abstract = '''
+MagAO-X is an entirely new extreme adaptive optics system for the Magellan
+Clay 6.5 m telescope, funded by the NSF MRI program starting in Sep 2016.
+The key science goal of MagAO-X is high-contrast imaging of accreting
+protoplanets at Hα. With 2040 actuators operating at up to 3630 Hz, MagAO-X
+will deliver high Strehls (> 70%), high resolution (19 mas), and high contrast
+(< 1 × 10^-4 ) at Hα (656 nm). We present an overview of the MagAO-X system,
+review the system design, and discuss the current project status.
+'''
+[[publications]]
+title = "Characterization of deformable mirrors for the MagAO-X project"
+authors = [
+    "Kyle Van Gorkom", "Kelsey L. Miller", "Jared R. Males",
+    "Olivier Guyon", "Alexander T. Rodack", "Jennifer Lumbres",
+    "Justin M. Knight"
+]
+published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
+publication_date = 2018-07-12T00:00:00
+url = "https://doi.org/10.1117/12.2323450"
+poster_file = "media/spie2018/Van_Gorkom_2018_SPIE_poster.pdf"
+manuscript_file = "media/spie2018/Van_Gorkom_2018_SPIE_manuscript.pdf"
+abstract = '''
+The MagAO-X instrument is an upgrade of the Magellan AO system that will
+introduce extreme adaptive optics capabilities for high-contrast imaging at
+visible and near-infrared wavelengths. A central component of this system is a
+2040-actuator microelectromechanical (MEMS) deformable mirror (DM) from Boston
+Micromachines Corp. (BMC) that will operate at 3.63 kHz for high-order
+wavefront control. Two additional DMs from ALPAO will perform low-order and
+non-common-path science-arm wavefront correction. The accuracy of the wavefront
+correction is limited by our ability to command these DMs to a desired shape,
+which requires a careful characterization of each DM surface. We have developed
+a characterization pipeline that uses a Zygo Verifire Interferometer to measure
+the surface response and a Karhunen-Loeve transform to remove noise from our
+measurements. We present our progress in the characterization process and the
+results of our pipeline applied to an ALPAO DM97 and a BMC Kilo-DM,
+demonstrating the ability to drive the DMs to a flat of ≤2nm and ≤4nm RMS in
+our beam footprint on the University of Arizona Wavefront Control (UAWFC)
+testbed.
+'''
+[[publications]]
+title = "Optical field/pupil rotator with a novel compact K-mirror for MagAO-X"
+authors = [
+    "Alexander D. Hedglen", "Laird M. Close", "Jared R. Males",
+    "Olivier Durney"
+]
+published_in = "Proc. SPIE. 10703, Adaptive Optics Systems VI"
+publication_date = 2018-07-12T00:00:00
+url = "https://doi.org/10.1117/12.2312346"
+poster_file = "media/spie2018/Hedglen_Poster_Final.pdf"
+manuscript_file = "media/spie2018/Hedglen_Manuscript_Final.pdf"
+slides_file = ""
+abstract = '''
+The Magellan Extreme Adaptive Optics (MagAO-X) is a visible-wavelength adaptive
+optics (AO) instrument optimized for visible light coronagraphy and exoplanet
+imaging with the 6.5-m Magellan Clay telescope in Chile. Extremely large
+telescopes such as the future Giant Magellan Telescope (GMT) will be able to
+image earth-like exoplanets, given an extreme AO system - such as MagAO-X -
+exists. MagAO-X is now under development in the lab and undergoing final
+integration and testing. Technical first light is planned for early 2019, with
+final commissioning in late 2020. A crucial component to MagAO-X is the
+“K-mirror,” a 3-mirror system designed to rotate the optical field with minimal
+image wobble or distortion about the optical axis. The K-mirror rotates on a
+miniature motorized stage to stabilize the pupil in the coronagraph as the
+telescope tracks the sky. The optical design of MagAO-X required a very compact
+K-mirror, resulting in a challenging opto-mechanical mount design. We present a
+novel solution to the compact design of a 50mm max envelope K-mirror for
+MagAO-X that consists of three < 1-in diameter flat mirrors, all precision
+glued in place. The K-mirror mount was designed in Autodesk® Fusion 360™ and a
+prototype was built in the Steward Observatory machine shop. Using inexpensive
+COTS mirrors, the K-mirror prototype was tested, aligned, and glued with
+optical feedback in the lab. Once the prototype had proven successful, a final
+K-mirror mount was fabricated and assembled with invar and precision (0.1nm RMS
+surface roughness, super polished, λ/40 PV flat) mirrors to develop a compact
+K-mirror for MagAO-X. The performance of the final hardware is presented here.
+'''
+[[publications]]
+title = "Real-time estimation and correction of quasi-static aberrations in ground-based high contrast imaging systems with high frame-rates"
+authors = [
+    "Alexander T. Rodack", "Jared R. Males", "Olivier Guyon",
+    "Benjamin A. Mazin", "Michael P. Fitzgerald", "Dimitri Mawet"
+]
+published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
+publication_date = 2018-07-12T00:00:00
+url = "https://doi.org/10.1117/12.2312218"
+poster_file = "media/spie2018/Rodack_SPIE_Poster.pdf"
+manuscript_file = "media/spie2018/Rodack_Manuscript.pdf"
+abstract = '''
+The success of ground-based, high contrast imaging for the detection of
+exoplanets in part depends on the ability to differentiate between quasi-static
+speckles caused by aberrations not corrected by adaptive optics (AO) systems,
+known as non-common path aberrations (NCPAs), and the planet intensity signal.
+Frazin (ApJ, 2013) introduced a post-processing algorithm demonstrating that
+simultaneous millisecond exposures in the science camera and wavefront sensor
+(WFS) can be used with a statistical inference procedure to determine both the
+series expanded NCPA coefficients and the planetary signal. We demonstrate, via
+simulation, that using this algorithm in a closed-loop AO system, real-time
+estimation and correction of the quasi-static NCPA is possible without separate
+deformable mirror (DM) probes. Thus the use of this technique allows for the
+removal of the quasi-static speckles that can be mistaken for planetary signals
+without the need for new optical hardware, improving the efficiency of
+ground-based exoplanet detection. In our simulations, we explore the behavior
+of the Frazin Algorithm (FA) and the dependence of its convergence to an
+accurate estimate on factors such as Strehl ratio, NCPA strength, and number of
+algorithm search basis functions. We then apply this knowledge to simulate
+running the algorithm in real-time in a nearly ideal setting. We then discuss
+adaptations that can be made to the algorithm to improve its real-time
+performance, and show their efficacy in simulation. A final simulation tests
+the technique’s resilience against imperfect knowledge of the AO residual phase,
+motivating an analysis of the feasibility of using this technique in a real
+closed-loop Extreme AO system such as SCExAO or MagAO-X, in terms of
+computational complexity and the accuracy of the estimated quasi-static NCPA
+correction.
+'''
+[[publications]]
+title = "Design of the MagAO-X pyramid wavefront sensor"
+authors = [
+    "Lauren H. Schatz", "Jared R. Males", "Laird M. Close", "Olivier Durney",
+    "Olivier Guyon", "Michael Hart", "Jennifer Lumbres", "Kelsey Miller",
+    "Justin Knight", "Alexander T. Rodack", "Joseph D. Long", "Kyle Van Gorkom",
+    "Madison Jean", "Maggie Kautz"
+]
+published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
+publication_date = 2018-07-12T00:00:00
+url = "https://doi.org/10.1117/12.2312171"
+poster_file = ""
+manuscript_file = ""
+slides_file = ""
+abstract = '''
+Adaptive optics systems correct atmospheric turbulence in real time. Most
+adaptive optics systems used routinely correct in the near infrared, at
+wavelengths greater than 1 μm. MagAO- X is a new extreme adaptive optics (ExAO)
+instrument that will offer corrections at visible-to- near-IR wavelengths.
+MagAO-X will achieve Strehl ratios of ≥70% at Hα when running the 2040 actuator
+deformable mirror at 3.6 kHz. A visible pyramid wavefront sensor (PWFS)
+optimized for sensing at 600-1000 nm wavelengths will provide the high-order
+wavefront sensing on MagAO-X. We present the optical design and predicted
+performance of the MagAO-X pyramid wavefront sensor.
+'''
+[[publications]]
+title = "Phase-induced amplitude apodization complex-mask coronagraph tolerancing and analysis"
+authors = [
+    "Justin M. Knight", "Olivier Guyon", "Julien Lozi",
+    "Nemanja Jovanovic", "Jared R. Males"
+]
+published_in = "Proc. SPIE 10706, Advances in Optical and Mechanical Technologies for Telescopes and Instrumentation III"
+publication_date = 2018-07-10T00:00:00
+url = "https://doi.org/10.1117/12.2314139"
+poster_file = ""
+manuscript_file = ""
+slides_file = ""
+abstract = '''
+Phase-Induced Amplitude Apodization Complex Mask Coronagraphs (PIAACMC) offer
+high-contrast performance at a small inner-working angle (< 1 λ/D) with high
+planet throughput (> 70%). The complex mask is a multi-zone, phase-shifting
+mask comprised of tiled hexagons which vary in depth. Complex masks can be
+difficult to fabricate as there are many micron-scale hexagonal zones (> 500 on
+average) with continuous depths ranging over a few microns. Ensuring the
+broadband PIAACMC design performance carries through to fabricated devices
+requires that these complex masks are manufactured to within well-defined
+tolerances. We report on a simulated tolerance analysis of a "toy" PIAACMC
+design which characterizes the effect of common microfabrication errors on
+on-axis contrast performance using a simple Monte Carlo method. Moreover, the
+tolerance analysis provides crucial information for choosing a fabrication
+process which yields working devices while potentially reducing process
+complexity. The common fabrication errors investigated are zone depth
+discretization, zone depth errors, and edge artifacts between zones.
+'''
+
+[[publications]]
+title = "A locking clamp that enables high thermal and vibrational stability for kinematic optical mounts"
+authors = [
+    "Maggie Kautz", "Laird M. Close", "Jared R. Males"
+]
+published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
+publication_date = 2018-07-12T00:00:00
+url = "https://doi.org/10.1117/12.2314245"
+poster_file = ""
+manuscript_file = ""
+slides_file = ""
+abstract = '''
+One of the main pursuits of the MagAO-X project is imaging planets around
+nearby stars with the direct detection method utilizing an extreme AO system
+and a coronagraph and a large telescope. The MagAO-X astronomical coronagraph
+will be implemented on the 6.5 meter Clay Magellan Telescope in Chile. The 22
+mirrors in the system require a high level of mirror stability. Our goal is
+less than 1 microradian drift in tilt per mirror per one degree Celsius change
+in temperature. There are no commercial 2inch kinematic optical mounts that are
+truly “zero-drift” from 0-20C. Our solution to this problem was to develop a
+locking clamp to keep our optics stable and fulfill our specifications. After
+performing temperature variation and thermal shock testing, we conclude that
+this novel locking clamp significantly increases the thermal stability of
+stainless steel mounts by ~10x but still allows accurate microradian
+positioning of a mirror. A provisional patent (#62/632,544) has been obtained
+for this mount.
+'''
+
+[[publications]]
+title = "Optical and mechanical design of the extreme AO coronagraphic instrument MagAO-X"
+authors = [
+    "Laird Close", "Jared Males", "Olivier Durney", "Corwynn Sauve",
+    "Maggie Kautz", "Alex Hedglen", "Lauren Schatz", "Jennifer Lumbres",
+    "Kelsey Miller", "Kyle Van Gorkom", "Madison Jean", "Victor Gasho"
+]
+published_in = "Proc. SPIE. 10703, Adaptive Optics Systems VI"
+publication_date = 2018-07-12T00:00:00
+url = "https://doi.org/10.1117/12.2312280"
+poster_file = ""
+manuscript_file = ""
+slides_file = ""
+abstract = '''
+Here we review the current optical mechanical design of MagAO-X. The project is
+post-PDR and has finished the design phase. The design presented here is the
+baseline to which all the optics and mechanics have been fabricated. The
+optical/mechanical performance of this novel extreme AO design will be
+presented here for the first time. Some highlights of the design are: 1) a
+floating, but height stabilized, optical table; 2) a Woofer tweeter (2040
+actuator BMC MEMS DM) design where the Woofer can be the current f/16 MagAO ASM
+or, more likely, fed by the facility f/11 static secondary to an ALPAO DM97
+woofer; 3) 22 very compact optical mounts that have a novel locking clamp for
+additional thermal and vibrational stability; 4) A series of four pairs of
+super-polished off-axis parabolic (OAP) mirrors with a relatively wide FOV by
+matched OAP clocking; 5) an advanced very broadband (0.5-1.7μm) ADC design; 6)
+A Pyramid (PWFS), and post-coronagraphic LOWFS NCP wavefront sensor; 7) a vAPP
+coronagraph for starlight suppression. Currently all the OAPs have just been
+delivered, and all the rest of the optics are in the lab. Most of the major
+mechanical parts are in the lab or instrument, and alignment of the optics has
+occurred for some of the optics (like the PWFS) and most of the mounts. First
+light should be in early 2019.
+'''
+
+[[publications]]
+title = "Modeling coronagraphic extreme wavefront control systems for high contrast imaging in ground and space telescope missions"
+authors = [
+    "Jennifer Lumbres", "Jared Males", "Ewan Douglas", "Laird Close",
+    "Olivier Guyon", "Kerri Cahoy", "Ashley Carlton", "Jim Clark",
+    "David Doelman", "Lee Feinberg", "Justin Knight", "Weston Marlow",
+    "Kelsey Miller", "Katie Morzinski", "Emiel Por", "Alexander Rodack",
+    "Lauren Schatz", "Frans Snik", "Kyle Van Gorkom", "Michael Wilby"
+]
+published_in = "Proc. SPIE. 10703, Adaptive Optics Systems VI"
+publication_date = 2018-07-12T00:00:00
+url = "https://doi.org/10.1117/12.2313780"
+poster_file = ""
+manuscript_file = ""
+slides_file = ""
+abstract = '''
+The challenges of high contrast imaging (HCI) for detecting exoplanets for both
+ground and space applications can be met with extreme adaptive optics (ExAO), a
+high-order adaptive optics system that performs wavefront sensing (WFS) and
+correction at high speed. We describe 2 ExAO optical system designs, one each
+for ground- based telescopes and space-based missions, and examine them using
+the angular spectrum Fresnel propagation module within the Physical Optics
+Propagation in Python (POPPY) package. We present an end-to-end (E2E)
+simulation of the MagAO-X instrument, an ExAO system capable of delivering 6x10
+-5 visible-light raw contrast for static, noncommon path aberrations without
+atmosphere. We present an E2E simulation of a laser guidestar (LGS) companion
+spacecraft testbed demonstration, which uses a remote beacon to increase the
+signal available for WFS and control of the primary aperture segments of a
+future large space telescope, providing of order 10 factor improvement for
+relaxing observatory stability requirements.
+'''
+
+[[publications]]
+title = "Focal plane wavefront sensing and control strategies for high-contrast imaging on the MagAO-X instrument"
+authors = [
+    "Kelsey Miller", "Jared R. Males", "Olivier Guyon", "Laird M. Close",
+    "David Doelman", "Frans Snik", "Emiel Por", "Michael J. Wilby",
+    "Chris Bohlman", "Jennifer Lumbres", "Kyle Van Gorkom", "Maggie Kautz",
+    "Alexander Rodack", "Justin Knight", "Nemanja Jovanovic", "Katie Morzinski",
+    "Lauren Schatz"
+]
+published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
+publication_date = 2018-07-12T00:00:00
+url = "https://doi.org/10.1117/12.2312809"
+poster_file = ""
+manuscript_file = ""
+slides_file = ""
+abstract = '''
+The Magellan extreme adaptive optics (MagAO-X) instrument is a new extreme
+adaptive optics (ExAO) system designed for operation in the visible to near-IR
+which will deliver high contrast-imaging capabilities. The main AO system will
+be driven by a pyramid wavefront sensor (PyWFS); however, to mitigate the
+impact of quasi-static and non-common path (NCP) aberrations, focal plane
+wavefront sensing (FPWFS) in the form of low-order wavefront sensing (LOWFS)
+and spatial linear dark field control (LDFC) will be employed behind a vector
+apodizing phase plate (vAPP) coronagraph using rejected starlight at an
+intermediate focal plane. These techniques will allow for continuous
+high-contrast imaging performance at the raw contrast level delivered by the
+vAPP coronagraph ( 6 x 10-5). We present simulation results for LOWFS and
+spatial LDFC with a vAPP coronagraph, as well as laboratory results for both
+algorithms implemented with a vAPP coronagraph at the University of Arizona
+Extreme Wavefront Control Lab.
+'''
+
+[[publications]]
+title = "The hunt for Sirius Ab: comparison of algorithmic sky and PSF estimation performance in deep coronagraphic thermal-IR high contrast imaging"
+authors = [
+    "Joseph D. Long", "Jared R. Males", "Katie M. Morzinski", "Laird M. Close",
+    "Frans Snik", "Matthew A. Kenworthy", "Gilles P. P. L. Otten",
+    "John Monnier", "Volker Tolls", "Alycia Weinberger"
+]
+published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
+publication_date = 2018-07-12T00:00:00
+url = "https://doi.org/10.1117/12.2312874"
+poster_file = "media/spie2018/jlong_spie_poster.pdf"
+manuscript_file = "media/spie2018/jlong_spie_manuscript.pdf"
+abstract = '''
+Despite promising astrometric signals, to date there has been no success in
+direct imaging of a hypothesized third member of the Sirius system. Using the
+Clio instrument and MagAO adaptive optics system on the Magellan Clay 6.5 m
+telescope, we have obtained extensive imagery of Sirius through a vector
+apodizing phase plate (vAPP) coronagraph in a narrowband filter at 3.9 microns.
+The vAPP coronagraph and MagAO allow us to be sensitive to planets much less
+massive than the limits set by previous non-detections. However, analysis of
+these data presents challenges due to the target’s brightness and unique
+characteristics of the instrument. We present a comparison of dimensionality
+reduction techniques to construct background illumination maps for the whole
+detector using the areas of the detector that are not dominated by starlight.
+Additionally, we describe a procedure for sub-pixel alignment of vAPP data
+using a physical-optics-based model of the coronagraphic PSF.
+'''

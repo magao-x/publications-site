@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MagAO-X - Publications</title>
+    <link rel="stylesheet" href="styles/bulma.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="https://magao-x.org">
+            <img style="max-height: 3rem" src="styles/magao-x_logo_color.png" alt="MagAO-X: Extreme adaptive optics for the Magellan Clay telescope">
+          </a>
+
+          <a role="button" class="navbar-burger" data-target="main-navigation" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+        <div class="navbar-menu" id="main-navigation">
+          <div class="navbar-start">
+            <a class="navbar-item" href="https://magao-x.org/publications/">
+              Publications
+            </a>
+            <a class="navbar-item" href="https://magao-x.org/docs/pdr/">
+              Preliminary Design Review
+            </a>
+          </div>
+          <div class="navbar-end">
+            <a class="navbar-item" href="http://visao.as.arizona.edu/">
+              Blog
+            </a>
+            <a class="navbar-item" href="https://github.com/magao-x">
+              GitHub
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-one-third">
+            <h1 class="title is-3">Publications</h1>
+            <p class="subtitle">
+              The collected publications, posters, and presentations of the MagAO-X collaboration
+            </p>
+            <p><button id="toggle-abstracts" class="button is-info" data-expanded="false">Expand all abstracts</button></p>
+          </div>
+          <div class="column">
+            {% for pub in publications|sort(attribute='publication_date', reverse=True) %}
+            <div class="publication">
+              <h2 class="title is-5">{{ pub.title }}</h2>
+              <h3 class="subtitle is-6 is-italic">{{ pub.authors|join(', ') }}</h3>
+              <div class="buttons">
+                {% if pub.manuscript_file %}<a class="button is-success is-outlined" href="{{ pub.manuscript_file }}" target="_blank"><span class="icon"><i class="material-icons">file_download</i></span><span>Manuscript</span></a>{% endif %}
+                {% if pub.poster_file %}<a class="button is-success is-outlined" href="{{ pub.poster_file }}" target="_blank"><span class="icon"><i class="material-icons">file_download</i></span><span>Poster</span></a>{% endif %}
+                {% if pub.slides_file %}<a class="button is-success is-outlined" href="{{ pub.slides_file }}"><span class="icon"><i class="material-icons">file_download</i></span><span>Slides</span></a>{% endif %}
+                {% if pub.url %}<a class="button is-info is-outlined" href="{{ pub.url }}"><span class="icon"><i class="material-icons">open_in_new</i></span><span>{{ pub.url }}</span></a>{% endif %}
+              </div>
+              <p>Published in {{ pub.published_in }} on {{ pub.publication_date.strftime('%b %d, %Y') }}</p>
+              <details>
+                <summary class="has-text-weight-bold">Abstract:</summary>
+                <p>{{ pub.abstract }}</p>
+              </details>
+            </div>
+            {% endfor %}
+          </div>
+      </div>
+    </section>
+    <footer class="container">
+      Last generated {{ today }}
+    </footer>
+  <script type="text/javascript">
+document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+const $abstractsToggle = document.getElementById("toggle-abstracts");
+$abstractsToggle.addEventListener('click', () => {
+  // toggle true into false:
+  $abstractsToggle.dataset.expanded = $abstractsToggle.dataset.expanded == "true" ? false : true;
+  if ($abstractsToggle.dataset.expanded == "true") {
+    $abstractsToggle.classList.add('is-outlined');
+    $abstractsToggle.innerText = "Collapse all abstracts";
+  } else {
+    $abstractsToggle.classList.remove('is-outlined');
+    $abstractsToggle.innerText = "Expand all abstracts";
+  }
+  document.querySelectorAll('.publication details').forEach(el => {
+    if ($abstractsToggle.dataset.expanded == "true") {
+      el.setAttribute("open", "open");
+    } else {
+      el.removeAttribute("open");
+    }
+  });
+});
+
+// Check if there are any navbar burgers
+if ($navbarBurgers.length > 0) {
+
+  // Add a click event on each of them
+  $navbarBurgers.forEach( el => {
+    el.addEventListener('click', () => {
+
+      // Get the target from the "data-target" attribute
+      const target = el.dataset.target;
+      const $target = document.getElementById(target);
+
+      // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+      el.classList.toggle('is-active');
+      $target.classList.toggle('is-active');
+
+    });
+  });
+}
+
+});
+  </script>
+  </body>
+</html>
