@@ -238,8 +238,8 @@ authors = [
 published_in = "Proc. SPIE. 10703, Adaptive Optics Systems VI"
 publication_date = 2018-07-12T00:00:00
 url = "https://doi.org/10.1117/12.2312280"
-poster_file = ""
-manuscript_file = ""
+poster_file = "media/spie2018/OptoMech_MagAOX_Laird_Poster V3.0.pdf"
+manuscript_file = "media/spie2018/SPIE_Laird_Close_10703_MagAOX_OptoMech_V10_resubmitted.pdf"
 slides_file = ""
 abstract = '''
 Here we review the current optical mechanical design of MagAO-X. The project is
