@@ -31,6 +31,8 @@ authors = [
 ]
 published_in = "Proc. SPIE. 10703, Adaptive Optics Systems VI"
 url = "https://doi.org/10.1117/12.2312992"
+slides_file = "media/spie2018/Males_SPIE2018_MagAOX_slides.pdf"
+manuscript_file = "media/spie2018/males_magaox_status_spie2018_submitted.pdf"
 publication_date = 2018-07-12T00:00:00
 abstract = '''
 MagAO-X is an entirely new extreme adaptive optics system for the Magellan
