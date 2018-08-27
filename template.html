@@ -62,7 +62,7 @@
                 {% if pub.manuscript_file %}<a class="button is-success is-outlined" href="{{ pub.manuscript_file }}" target="_blank"><span class="icon"><i class="material-icons">file_download</i></span><span>Manuscript</span></a>{% endif %}
                 {% if pub.poster_file %}<a class="button is-success is-outlined" href="{{ pub.poster_file }}" target="_blank"><span class="icon"><i class="material-icons">file_download</i></span><span>Poster</span></a>{% endif %}
                 {% if pub.slides_file %}<a class="button is-success is-outlined" href="{{ pub.slides_file }}"><span class="icon"><i class="material-icons">file_download</i></span><span>Slides</span></a>{% endif %}
-                {% if pub.url %}<a class="button is-info is-outlined" href="{{ pub.url }}"><span class="icon"><i class="material-icons">open_in_new</i></span><span>{{ pub.url }}</span></a>{% endif %}
+                {% if pub.url %}<a class="button is-link is-outlined" href="{{ pub.url }}"><span class="icon"><i class="material-icons">open_in_new</i></span><span>{{ pub.url }}</span></a>{% endif %}
               </div>
               <p>Published in {{ pub.published_in }} on {{ pub.publication_date.strftime('%b %d, %Y') }}</p>
               <details>
