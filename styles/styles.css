@@ -19,4 +19,8 @@ footer {
         flex-wrap: wrap;
         white-space: normal;
     }
+    .button span {
+        max-width: 100%;
+        word-wrap: break-word;
+    }
 }
