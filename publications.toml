@@ -309,8 +309,8 @@ published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
 publication_date = 2018-07-12T00:00:00
 url = "https://doi.org/10.1117/12.2312809"
 poster_file = ""
-manuscript_file = ""
-slides_file = ""
+manuscript_file = "media/spie2018/Miller_FPWFS_MagAOX_SPIE_2018.pdf"
+slides_file = "media/spie2018/Miller_FPWFS_slides.pdf"
 abstract = '''
 The Magellan extreme adaptive optics (MagAO-X) instrument is a new extreme
 adaptive optics (ExAO) system designed for operation in the visible to near-IR
