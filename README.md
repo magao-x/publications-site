@@ -34,7 +34,7 @@ All fields are required, except for `url`, `poster_file`, `manuscript_file`, and
 
 ## 3. Place files under `media/`
 
-The generator is not smart enough to follow paths and copy files from there, so ensure all media files are included under `media/` in this repository.
+Ensure all media files are included under `media/` in this repository so that your links work. The `poster_file`, `manuscript_file`, and `slides_file` attributes should start with `media/` (i.e. the path relative to the folder containing `generate.py`, though the generator just uses the path as-is).
 
 ## 4. Run `generate.py`
 

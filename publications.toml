@@ -210,8 +210,8 @@ authors = [
 published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
 publication_date = 2018-07-12T00:00:00
 url = "https://doi.org/10.1117/12.2314245"
-poster_file = ""
-manuscript_file = ""
+poster_file = "media/spie2018/Kautz_Poster.pdf"
+manuscript_file = "media/spie2018/Kautz_Manuscript.pdf"
 slides_file = ""
 abstract = '''
 One of the main pursuits of the MagAO-X project is imaging planets around
