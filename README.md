@@ -36,6 +36,16 @@ All fields are required, except for `url`, `poster_file`, `manuscript_file`, and
 
 Ensure all media files are included under `media/` in this repository so that your links work. The `poster_file`, `manuscript_file`, and `slides_file` attributes should start with `media/` (i.e. the path relative to the folder containing `generate.py`, though the generator just uses the path as-is).
 
+### 3.1. (optional) Compress oversized PDFs
+
+Following [this AskUbuntu]() question, if you have `gs` (GhostScript) installed you can shrink PDF file sizes dramatically with this command:
+
+```
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf
+```
+
+Where `input.pdf` is the file to shrink, and `output.pdf` will be created by GhostScript. This turned a 35.6 MB PDF from PowerPoint into a 2.1 MB file with minimal loss in quality.
+
 ## 4. Run `generate.py`
 
 If everything works, no output will be produced. Open `output/index.html` to review your changes.
