@@ -10,6 +10,7 @@
 # published_in = ""
 # publication_date = 1970-01-01T00:00:00
 # url = ""
+# bibcode = ""
 # poster_file = ""
 # manuscript_file = ""
 # slides_file = ""
@@ -31,6 +32,7 @@ authors = [
 ]
 published_in = "Proc. SPIE. 10703, Adaptive Optics Systems VI"
 url = "https://doi.org/10.1117/12.2312992"
+bibcode = "2018SPIE10703E..09M"
 slides_file = "media/spie2018/Males_SPIE2018_MagAOX_slides.pdf"
 manuscript_file = "media/spie2018/males_magaox_status_spie2018_submitted.pdf"
 publication_date = 2018-07-12T00:00:00
@@ -53,6 +55,7 @@ authors = [
 published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
 publication_date = 2018-07-12T00:00:00
 url = "https://doi.org/10.1117/12.2323450"
+bibcode = "2018SPIE10703E..5AV"
 poster_file = "media/spie2018/Van_Gorkom_2018_SPIE_poster.pdf"
 manuscript_file = "media/spie2018/Van_Gorkom_2018_SPIE_manuscript.pdf"
 abstract = '''
@@ -82,6 +85,7 @@ authors = [
 published_in = "Proc. SPIE. 10703, Adaptive Optics Systems VI"
 publication_date = 2018-07-12T00:00:00
 url = "https://doi.org/10.1117/12.2312346"
+bibcode = "2018SPIE10703E..55H"
 poster_file = "media/spie2018/Hedglen_Poster_Final.pdf"
 manuscript_file = "media/spie2018/Hedglen_Manuscript_Final.pdf"
 slides_file = ""
@@ -118,6 +122,7 @@ authors = [
 published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
 publication_date = 2018-07-12T00:00:00
 url = "https://doi.org/10.1117/12.2312218"
+bibcode = "2018SPIE10703E..2NR"
 poster_file = "media/spie2018/Rodack_SPIE_Poster.pdf"
 manuscript_file = "media/spie2018/Rodack_Manuscript.pdf"
 abstract = '''
@@ -158,6 +163,7 @@ authors = [
 published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
 publication_date = 2018-07-12T00:00:00
 url = "https://doi.org/10.1117/12.2312171"
+bibcode = "2018SPIE10703E..21S"
 poster_file = ""
 manuscript_file = "media/spie2018/schatz_SPIE2018PWFSDesignVfinal.pdf"
 slides_file = "media/spie2018/schatz_slides.pdf"
@@ -181,6 +187,7 @@ authors = [
 published_in = "Proc. SPIE 10706, Advances in Optical and Mechanical Technologies for Telescopes and Instrumentation III"
 publication_date = 2018-07-10T00:00:00
 url = "https://doi.org/10.1117/12.2314139"
+bibcode = "2018arXiv180704379K"
 poster_file = ""
 manuscript_file = "media/spie2018/knight_manuscript.pdf"
 slides_file = ""
@@ -201,7 +208,6 @@ process which yields working devices while potentially reducing process
 complexity. The common fabrication errors investigated are zone depth
 discretization, zone depth errors, and edge artifacts between zones.
 '''
-
 [[publications]]
 title = "A locking clamp that enables high thermal and vibrational stability for kinematic optical mounts"
 authors = [
@@ -210,6 +216,7 @@ authors = [
 published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
 publication_date = 2018-07-12T00:00:00
 url = "https://doi.org/10.1117/12.2314245"
+bibcode = "2018SPIE10703E..2QK"
 poster_file = "media/spie2018/Kautz_Poster.pdf"
 manuscript_file = "media/spie2018/Kautz_Manuscript.pdf"
 slides_file = ""
@@ -229,7 +236,6 @@ stainless steel mounts by ~10x but still allows accurate microradian
 positioning of a mirror. A provisional patent (#62/632,544) has been obtained
 for this mount.
 '''
-
 [[publications]]
 title = "Optical and mechanical design of the extreme AO coronagraphic instrument MagAO-X"
 authors = [
@@ -240,6 +246,7 @@ authors = [
 published_in = "Proc. SPIE. 10703, Adaptive Optics Systems VI"
 publication_date = 2018-07-12T00:00:00
 url = "https://doi.org/10.1117/12.2312280"
+bibcode = "2018SPIE10703E..4YC"
 poster_file = "media/spie2018/OptoMech_MagAOX_Laird_Poster V3.0.pdf"
 manuscript_file = "media/spie2018/SPIE_Laird_Close_10703_MagAOX_OptoMech_V10_resubmitted.pdf"
 slides_file = ""
@@ -263,7 +270,6 @@ mechanical parts are in the lab or instrument, and alignment of the optics has
 occurred for some of the optics (like the PWFS) and most of the mounts. First
 light should be in early 2019.
 '''
-
 [[publications]]
 title = "Modeling coronagraphic extreme wavefront control systems for high contrast imaging in ground and space telescope missions"
 authors = [
@@ -276,6 +282,7 @@ authors = [
 published_in = "Proc. SPIE. 10703, Adaptive Optics Systems VI"
 publication_date = 2018-07-12T00:00:00
 url = "https://doi.org/10.1117/12.2313780"
+bibcode = "2018SPIE10703E..4ZL"
 poster_file = "media/spie2018/jlumbres_SPIEastro2018_Poster.pdf"
 manuscript_file = "media/spie2018/jlumbres_SPIEastro2018_proceedings_FINAL.pdf"
 slides_file = ""
@@ -308,6 +315,7 @@ authors = [
 published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
 publication_date = 2018-07-12T00:00:00
 url = "https://doi.org/10.1117/12.2312809"
+bibcode = "2018SPIE10703E..1TM"
 poster_file = ""
 manuscript_file = "media/spie2018/Miller_FPWFS_MagAOX_SPIE_2018.pdf"
 slides_file = "media/spie2018/Miller_FPWFS_slides.pdf"
@@ -338,6 +346,7 @@ authors = [
 published_in = "Proc. SPIE 10703, Adaptive Optics Systems VI"
 publication_date = 2018-07-12T00:00:00
 url = "https://doi.org/10.1117/12.2312874"
+bibcode = "2018SPIE10703E..2TL"
 poster_file = "media/spie2018/jlong_spie_poster.pdf"
 manuscript_file = "media/spie2018/jlong_spie_manuscript.pdf"
 abstract = '''

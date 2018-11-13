@@ -46,12 +46,13 @@
     <section class="section">
       <div class="container">
         <div class="columns">
-          <div class="column is-one-third">
+          <div class="column is-one-third" id="side-info">
             <h1 class="title is-3">Publications</h1>
             <p class="subtitle">
               The collected publications, posters, and presentations of the MagAO-X collaboration
             </p>
             <p><button id="toggle-abstracts" class="button is-info" data-expanded="false">Expand all abstracts</button></p>
+            <p><a class="button is-link is-outlined" href="https://ui.adsabs.harvard.edu/#search/q=bibcode:({{ publications|map(attribute='bibcode')|join(' OR ') }})" target="_blank"><span class="icon"><i class="material-icons">open_in_new</i></span><span>Query in ADS</span></a></p>
           </div>
           <div class="column">
             {% for pub in publications|sort(attribute='publication_date', reverse=True) %}

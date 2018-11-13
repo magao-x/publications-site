@@ -21,6 +21,7 @@ authors = [
 published_in = ""
 publication_date = 1970-01-01T00:00:00
 url = ""
+bibcode = ""
 poster_file = ""
 manuscript_file = ""
 slides_file = ""
@@ -29,6 +30,8 @@ abstract = '''
 ```
 
 Multiple authors can be listed as comma-separated quoted strings (i.e. `authors = ["Ada Lovelace", "Lavinia Steward"]`).
+
+The `bibcode` field is for an ADS [BibCode](http://adsabs.github.io/help/actions/bibcode), like `2018SPIE10703E..09M` from the link http://adsabs.harvard.edu/abs/2018SPIE10703E..09M to retrieve an abstract from [ADS](http://adsabs.harvard.edu).
 
 All fields are required, except for `url`, `poster_file`, `manuscript_file`, and `slides_file`. However, at least one of `url`, `poster_file`, `manuscript_file`, or `slides_file` should be filled in so that a link appears with the entry allowing users to find the published materials.
 

@@ -4,6 +4,10 @@
     margin-bottom: 2rem;
 }
 
+#side-info .button {
+    margin-bottom: 0.5rem;
+}
+
 .publication details {
     margin: 2rem 0;
 }
