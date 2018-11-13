@@ -52,7 +52,7 @@
               The collected publications, posters, and presentations of the MagAO-X collaboration
             </p>
             <p><button id="toggle-abstracts" class="button is-info" data-expanded="false">Expand all abstracts</button></p>
-            <p><a class="button is-link is-outlined" href="https://ui.adsabs.harvard.edu/#search/q=bibcode:({{ publications|map(attribute='bibcode')|join(' OR ') }})" target="_blank"><span class="icon"><i class="material-icons">open_in_new</i></span><span>Query in ADS</span></a></p>
+            <p><a class="button is-link is-outlined" href="https://ui.adsabs.harvard.edu/#search/q=bibcode:({{ publications|map(attribute='bibcode')|join(' OR ') }})" target="_blank"><span class="icon"><i class="material-icons">open_in_new</i></span><span>Query all in ADS</span></a></p>
           </div>
           <div class="column">
             {% for pub in publications|sort(attribute='publication_date', reverse=True) %}
@@ -64,6 +64,7 @@
                 {% if pub.poster_file %}<a class="button is-success is-outlined" href="{{ pub.poster_file }}" target="_blank"><span class="icon"><i class="material-icons">file_download</i></span><span>Poster</span></a>{% endif %}
                 {% if pub.slides_file %}<a class="button is-success is-outlined" href="{{ pub.slides_file }}"><span class="icon"><i class="material-icons">file_download</i></span><span>Slides</span></a>{% endif %}
                 {% if pub.url %}<a class="button is-link is-outlined" href="{{ pub.url }}"><span class="icon"><i class="material-icons">open_in_new</i></span><span>View in journal</span></a>{% endif %}
+                {% if pub.bibcode %}<a class="button is-link is-outlined" href="https://ui.adsabs.harvard.edu/#abs/{{ pub.bibcode }}/abstract"><span class="icon"><i class="material-icons">open_in_new</i></span><span>Open in ADS</span></a>{% endif %}
               </div>
               <p>Published in {{ pub.published_in }} on {{ pub.publication_date.strftime('%b %d, %Y') }}</p>
               <details>
