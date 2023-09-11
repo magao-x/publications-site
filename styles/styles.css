@@ -9,7 +9,16 @@
 }
 
 .publication details {
-    margin: 2rem 0;
+    margin-bottom: 1rem;
+}
+
+.publication .journal {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.bibcode {
+    font-family: monospace;
 }
 
 footer {

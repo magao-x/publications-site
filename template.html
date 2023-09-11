@@ -33,7 +33,7 @@
             </a>
           </div>
           <div class="navbar-end">
-            <a class="navbar-item" href="http://visao.as.arizona.edu/">
+            <a class="navbar-item" href="http://xwcl.science/blog/">
               Blog
             </a>
             <a class="navbar-item" href="https://github.com/magao-x">
@@ -52,7 +52,7 @@
               The collected publications, posters, and presentations of the MagAO-X collaboration
             </p>
             <p><button id="toggle-abstracts" class="button is-info" data-expanded="false">Expand all abstracts</button></p>
-            <p><a class="button is-link is-outlined" href="https://ui.adsabs.harvard.edu/#search/q=bibcode:({{ publications|map(attribute='bibcode')|join(' OR ') }})" target="_blank"><span class="icon"><i class="material-icons">open_in_new</i></span><span>Query all in ADS</span></a></p>
+            <p><a class="button is-link is-outlined" href="https://ui.adsabs.harvard.edu/public-libraries/{{ library_id }}" target="_blank"><span class="icon"><i class="material-icons">open_in_new</i></span><span>ADS Library</span></a></p>
           </div>
           <div class="column">
             {% for pub in publications|sort(attribute='publication_date', reverse=True) %}
@@ -60,17 +60,19 @@
               <h2 class="title is-5">{{ pub.title }}</h2>
               <h3 class="subtitle is-6 is-italic">{{ pub.authors|join(', ') }}</h3>
               <div class="buttons">
-                {% if pub.manuscript_file %}<a class="button is-success is-outlined" href="{{ pub.manuscript_file }}" target="_blank"><span class="icon"><i class="material-icons">file_download</i></span><span>Manuscript</span></a>{% endif %}
-                {% if pub.poster_file %}<a class="button is-success is-outlined" href="{{ pub.poster_file }}" target="_blank"><span class="icon"><i class="material-icons">file_download</i></span><span>Poster</span></a>{% endif %}
-                {% if pub.slides_file %}<a class="button is-success is-outlined" href="{{ pub.slides_file }}"><span class="icon"><i class="material-icons">file_download</i></span><span>Slides</span></a>{% endif %}
-                {% if pub.url %}<a class="button is-link is-outlined" href="{{ pub.url }}"><span class="icon"><i class="material-icons">open_in_new</i></span><span>View in journal</span></a>{% endif %}
-                {% if pub.bibcode %}<a class="button is-link is-outlined" href="https://ui.adsabs.harvard.edu/#abs/{{ pub.bibcode }}/abstract"><span class="icon"><i class="material-icons">open_in_new</i></span><span>Open in ADS</span></a>{% endif %}
+                {% for att in pub.attachments %}
+                <a class="button is-success is-outlined" href="{{ att.filename }}" target="_blank"><span class="icon"><i class="material-icons">file_download</i></span><span>{{ att.name|lower }}</span></a>
+                {% endfor %}
+                {% for link in pub.links %}
+                <a class="button is-link is-outlined" href="{{ link.url }}" target="_blank"><span class="icon"><i class="material-icons">open_in_new</i></span><span>{{ link.label }}</span></a>
+                {% endfor %}
               </div>
-              <p>Published in {{ pub.published_in }} on {{ pub.publication_date.strftime('%b %d, %Y') }}</p>
               <details>
                 <summary class="has-text-weight-bold">Abstract:</summary>
                 <p>{{ pub.abstract }}</p>
               </details>
+              <p><a href="https://ui.adsabs.harvard.edu/#abs/{{ pub.bibcode }}/abstract"><span class="bibcode">{{ pub.bibcode }}</span></a></p>
+              <p class="journal">{{ pub.journal }}</p>
             </div>
             {% endfor %}
           </div>
