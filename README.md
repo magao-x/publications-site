@@ -2,9 +2,9 @@
 
 Generates a list of publications with collapsible inline abstracts from an ADS library and renders them into an HTML template. The publications site lives at https://magao-x.org/publications, which is served from `/srv/www/publications`.
 
-@logan-pearce is the keeper of the XWCL/MagAO-X ADS library: https://ui.adsabs.harvard.edu/public-libraries/EctrgCz4QjagJOiSxQlAXg
+The XWCL/MagAO-X ADS library is a collection of papers produced by members of the collaboration, and can be found here: https://ui.adsabs.harvard.edu/public-libraries/EctrgCz4QjagJOiSxQlAXg. Anyone can add a publication to it, just tell @logan-pearce the email you used for your ADS account.
 
-If you want to attach slides or a poster PDF:
+If you want to attach slides or a poster PDF to a publication:
 
 1. clone this repository
 2. make a new folder under `media/` named with the ADS bibcode of the abstract it should attach to
