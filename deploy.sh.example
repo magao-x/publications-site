@@ -2,4 +2,6 @@
 export ADS_API_TOKEN=
 export ADS_LIBRARY_ID=
 export PUBLICATIONS_OUTPUT_DIR=/srv/www/main/publications/
+make pyenv
+source pyenv/bin/activate
 make
