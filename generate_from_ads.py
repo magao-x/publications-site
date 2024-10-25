@@ -11,7 +11,7 @@ import shutil
 import datetime
 
 project_dir = dirname(__file__)
-output_dir = join(project_dir, 'output')
+output_dir = os.environ.get('PUBLICATIONS_OUTPUT_DIR', join(project_dir, 'output'))
 
 PREFERRED_LINK_TYPES = [
     ('journal', 'PUB_HTML'),
